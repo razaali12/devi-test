@@ -1,0 +1,28 @@
+@use "../../master.scss";
+
+.btn-style {
+  position: relative;
+  text-align: center;
+  background-color: master.$primary-color;
+  color: #fff;
+  padding: 8px 22px;
+  min-width: 110px;
+  font-size: 14px;
+  border-radius: 15px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 400;
+  transition: 0.4s all;
+  cursor: pointer;
+  &:hover {
+    background-color: master.$primary-hover-color;
+    color: #fff;
+  }
+  &:disabled {
+    background-color: master.$primary-disabled-color !important;
+    cursor: auto;
+  }
+  svg {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,114 @@
+@use "../../master.scss";
+
+.signin-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  .logo-wrapper {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .form-wrapper {
+    padding: 40px 30px;
+    min-width: max-content;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+    border-radius: 12px;
+    .title {
+      font-size: 35px;
+      color: master.$primary-color;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: 500;
+      &.forget-ttl {
+        font-size: 27px;
+        margin-bottom: 35px;
+      }
+    }
+    .form {
+      margin: 10px 0;
+      width: 100%;
+      .ant-form-item {
+        margin-bottom: 25px !important;
+        input {
+          font-weight: 400;
+          padding: 6px 10px;
+          border-radius: 6px;
+          &:focus,
+          &:hover {
+            border: 1px solid master.$primary-color;
+            box-shadow: none;
+          }
+        }
+        .ant-input-password {
+          border-radius: 6px;
+          padding: 0px 10px 0 1px;
+          box-shadow: none !important;
+          input {
+            border: none;
+            box-shadow: none;
+          }
+          &:focus,
+          &:hover {
+            border: 1px solid master.$primary-color;
+          }
+        }
+        .ant-form-item-explain-error {
+          font-size: 11px;
+        }
+        button {
+          font-size: 15px;
+          padding: 10px 10px;
+          border-radius: 6px;
+          height: auto;
+          width: 100%;
+          // margin-top: 10px;
+          color: white;
+          background: master.$primary-color;
+          border: none;
+          line-height: normal !important;
+          &:hover {
+            background: master.$primary-color;
+          }
+          span {
+            line-height: normal !important;
+          }
+        }
+      }
+    }
+    // @media screen and (max-width: 998px) {
+    //   padding: 0;
+    //   height: auto;
+    //   margin: 0;
+    // }
+  }
+  .forgot-pass {
+    text-align: center;
+    display: block;
+    a {
+      color: master.$primary-color;
+    }
+  }
+  .email-send {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 998px) {
+    // padding: 0 10%;
+    // width: 100%;
+    // height: auto;
+  }
+}
+
+
+.formError {
+  color: red;
+  font-size: 14px;
+}
